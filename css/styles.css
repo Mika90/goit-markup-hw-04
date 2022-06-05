@@ -49,6 +49,7 @@ body {
 
 ul {
     list-style: none;
+    padding-inline-start: 0;
 }
 
 h2 {
@@ -58,6 +59,7 @@ h2 {
 
 .container {
     width: var(--container-width);
+    margin: 0 auto;
 }
 
 .header-container {
@@ -246,4 +248,9 @@ h2 {
 .lorem-ipsum-element > .pre {
     color: var(--lorem-ipsum-article-color);
     font-size: var(--lorem-ipsum-article-font-size);
+}
+
+.auto-margin {
+    margin: 0 auto;
+    padding: 0;
 }
