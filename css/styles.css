@@ -136,6 +136,7 @@ h2 {
     cursor: pointer;
     font-size: 16px;
     padding: 10px 41px 10px 42px;
+    border-radius: 4px;
 }
 
 .button:hover, .button:focus {
@@ -173,6 +174,7 @@ h2 {
     border: 0 solid transparent;
     padding: 6px 22px;
     margin: 0 3px;
+    border-radius: 4px;
 }
 
 .picture-title {
