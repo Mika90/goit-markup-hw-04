@@ -1,37 +1,45 @@
 :root {
-    --logo-start-color: #2196F3;
-    --text-color: #212121;
-    --link-color: black;
-    --link-active-color: #2196F3;
+    --address: #757575;
+    --background-color: #2F303A;
+    --background-text-color: white;
     --button-active-color: #2196F3;
+    --button-active-text-color: white;
     --button-color: #F5F4FA;
     --button-text-color: black;
-    --button-active-text-color: white;
+    --container-width: 1200px;
+    --footer-address-contact: #FFFFFF99;
+    --footer-address-size: 14px;
+    --footer-address: #FFFFFF;
+    --footer-logo: white;
+    --h2-font-size: 36px;
+    --header-container-border-color: #ECECEC;
+    --header-height: 600px;
     --header-link-font-size: 14px;
     --header-link-font-weight: 500;
     --header-link-line-height: 1.17;
-    --portfolio-picture-title-font-size: 18px;
-    --portfolio-picture-title-font-weight: 700;
-    --portfolio-picture-title-line-height: 2;
-    --portfolio-navigation-font-size: 16px;
-    --portfolio-navigation-font-weight: 500;
-    --portfolio-navigation-line-height: 1.25;
-    --background-color: #2F303A;
-    --background-text-color: white;
-    --picture-work-font-size: 16px;
-    --picture-work-font-weight: 400;
-    --picture-work-line-height: 1.17;
+    --link-active-color: #2196F3;
+    --link-color: black;
+    --logo-start-color: #2196F3;
+    --our-team-container-color: #F5F4FA;
+    --our-team-element-background: white;
     --picture-title-font-size: 16px;
     --picture-title-font-weight: 500;
     --picture-title-line-height: 1.17;
-    --our-team-container-color: #F5F4FA;
-    --our-team-element-background: white;
-    --address: #757575;
-    --footer-logo: white;
-    --footer-address: #FFFFFF;
-    --footer-address-size: 14px;
-    --footer-address-contact: #FFFFFF99;
-    --container-width: 1200px;
+    --picture-work-font-size: 16px;
+    --picture-work-font-weight: 400;
+    --picture-work-line-height: 1.17;
+    --portfolio-navigation-font-size: 16px;
+    --portfolio-navigation-font-weight: 500;
+    --portfolio-navigation-line-height: 1.25;
+    --portfolio-picture-border-color: #EEEEEE;
+    --portfolio-picture-title-font-size: 18px;
+    --portfolio-picture-title-font-weight: 700;
+    --portfolio-picture-title-line-height: 2;
+    --text-color: #212121;
+    --logo-link-font-size: 26px;
+    --lorem-ipsum-article-color: #757575;
+    --lorem-ipsum-article-font-size: 14px;
+    --button-border-radius: 4px;
 }
 
 body {
@@ -45,7 +53,7 @@ ul {
 
 h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: var(--h2-font-size);
 }
 
 .container {
@@ -56,7 +64,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--header-container-border-color);
 }
 
 .flexbox-header {
@@ -64,12 +72,11 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 600px;
-
+    height: var(--header-height);
 }
 
 .portfolio-picture {
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--portfolio-picture-border-color);
     margin-bottom: 30px;
 }
 
@@ -77,15 +84,20 @@ h2 {
     padding: 20px 24px;
 }
 
-.flexbox {
+.flexbox-center {
     display: flex;
     justify-content: center;
+}
+
+.flexbox-spaces {
+    display: flex;
+    justify-content: space-between;
 }
 
 .portfolio-flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .inline-block {
@@ -115,7 +127,7 @@ h2 {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: black;
-    font-size: 26px;
+    font-size: var(--logo-link-font-size);
 }
 
 .logo-start {
@@ -136,7 +148,7 @@ h2 {
     cursor: pointer;
     font-size: 16px;
     padding: 10px 41px 10px 42px;
-    border-radius: 4px;
+    border-radius: var(--button-border-radius);
 }
 
 .button:hover, .button:focus {
@@ -174,7 +186,7 @@ h2 {
     border: 0 solid transparent;
     padding: 6px 22px;
     margin: 0 3px;
-    border-radius: 4px;
+    border-radius: var(--button-border-radius);
 }
 
 .picture-title {
@@ -231,10 +243,7 @@ h2 {
     display: block;
 }
 
-.flexbox-spaces {
-    justify-content: space-between;
-}
-
-.lorem-ipsum-element {
-    width: 270px;
+.lorem-ipsum-element > .pre {
+    color: var(--lorem-ipsum-article-color);
+    font-size: var(--lorem-ipsum-article-font-size);
 }
