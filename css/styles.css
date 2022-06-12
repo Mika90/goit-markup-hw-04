@@ -62,6 +62,14 @@ h2 {
     margin: 0 auto;
 }
 
+.section-padding-top {
+    padding-top: 94px;
+}
+
+.section-padding-bottom {
+    padding-bottom: 94px;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -81,6 +89,10 @@ h2 {
 .portfolio-picture {
     border: 1px solid var(--portfolio-picture-border-color);
     margin-bottom: 30px;
+}
+
+.portfolio-picture:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-picture-text {
@@ -127,8 +139,7 @@ h2 {
 
 .our-team-container {
     background-color: var(--our-team-container-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+
 }
 
 .our-team-image {
@@ -209,6 +220,12 @@ h2 {
     padding: 6px 22px;
     margin: 0 3px;
     border-radius: var(--button-border-radius);
+
+}
+
+.portfolio-navigation:hover {
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .picture-title {
@@ -248,21 +265,21 @@ h2 {
 }
 
 .portfolio-navigation-container {
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 56px;
 }
 
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    align-items: baseline;
 }
 
-.footer > *:nth-child(1) {
+.footer-info > *:nth-child(1) {
     margin-bottom: 20px;
-
 }
 
-.footer > * {
+.footer-info > * {
     margin-bottom: 9px;
     display: block;
 }
@@ -325,4 +342,40 @@ h2 {
 .client-image-box:hover {
     border-color: #2196F3;
     fill: #2196F3;
+}
+
+.clients-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display: inline-block;
+}
+
+.footer-info {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.footer-social-title {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer .social-icon {
+    background-color: rgb(255, 255, 255, 10%);
+}
+
+.footer .social-icon:hover {
+    background-color: #2196F3;
+}
+
+.footer .social-container {
+    width: 206px;
+    display: flex;
+    justify-content: space-between;
 }
