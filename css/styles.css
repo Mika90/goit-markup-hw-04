@@ -269,3 +269,15 @@ h2 {
     width: 70px;
     height: 70px;
 }
+
+.social {
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-around;
+
+}
