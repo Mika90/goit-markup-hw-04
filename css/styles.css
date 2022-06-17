@@ -70,11 +70,14 @@ h2 {
     padding-bottom: 94px;
 }
 
+.header {
+    border-bottom: 1px solid var(--header-container-border-color);
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--header-container-border-color);
 }
 
 .flexbox-header {
@@ -139,7 +142,6 @@ h2 {
 
 .our-team-container {
     background-color: var(--our-team-container-color);
-
 }
 
 .our-team-image {
@@ -206,6 +208,10 @@ h2 {
     margin-right: 46px;
 }
 
+.header-link.phone {
+    margin-right: 0;
+}
+
 .portfolio-picture-title {
     font-size: var(--portfolio-picture-title-font-size);
     font-weight: var(--portfolio-picture-title-font-weight);
@@ -240,6 +246,7 @@ h2 {
     font-weight: var(--picture-work-font-weight);
     line-height: var(--picture-work-line-height);
     margin-bottom: 16px;
+    color: #757575;
 }
 
 .background {
