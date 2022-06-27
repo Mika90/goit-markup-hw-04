@@ -72,6 +72,7 @@ h2 {
 
 .header {
     border-bottom: 1px solid var(--header-container-border-color);
+    height: 80px;
 }
 
 .header-container {
@@ -85,17 +86,18 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: var(--header-height);
-    background-image: url("./../images/Img Overlay.png"), url("./../images/tełko.jpg");
+
 }
 
 .portfolio-picture {
     border: 1px solid var(--portfolio-picture-border-color);
     margin-bottom: 30px;
+
 }
 
 .portfolio-picture:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer
 }
 
 .portfolio-picture-text {
@@ -312,6 +314,10 @@ h2 {
     fill: #AFB1B8;
 }
 
+.footer-social .social {
+    fill: white;
+}
+
 .social-icon:hover > .social {
     fill: white;
 }
@@ -327,6 +333,7 @@ h2 {
 
 .social-icon:hover {
     background-color: #2196F3;
+    cursor: pointer;
 }
 
 .social-container {
@@ -349,6 +356,7 @@ h2 {
 .client-image-box:hover {
     border-color: #2196F3;
     fill: #2196F3;
+    cursor: pointer
 }
 
 .clients-container {
@@ -385,4 +393,10 @@ h2 {
     width: 206px;
     display: flex;
     justify-content: space-between;
+}
+
+.background-header {
+    height: var(--header-height);
+    max-width: 1600px;
+    background-image: url("./../images/Img Overlay.png"), url("./../images/tełko.jpg");
 }
